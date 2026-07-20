@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "Milsim Ready",
   description: "Gear up, learn the lingo, and survive your first milsim event.",
   icons: {
+    icon: "/icon.png",
     apple: "/icon.png",
   },
 };
