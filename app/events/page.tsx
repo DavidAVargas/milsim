@@ -23,6 +23,11 @@ const EVENTS = [
   },
 ];
 
+const UPCOMING = [
+  { name: "Third Coast Airsoft", org: "Third Coast Airsoft" },
+  { name: "American Milsim", org: "American Milsim" },
+];
+
 function RatingBar({ label, value }: { label: string; value: number }) {
   return (
     <div className="flex items-center gap-3">
@@ -75,6 +80,28 @@ export default function EventsPage() {
             </p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-10">
+        <h2 className="mb-4 font-mono text-sm font-bold tracking-widest uppercase text-foreground">Upcoming</h2>
+        <div className="flex flex-col gap-3">
+          {UPCOMING.map((event) => (
+            <div
+              key={event.name}
+              className="flex flex-wrap items-center justify-between gap-4 border border-dashed border-border bg-card p-5"
+            >
+              <div>
+                <p className="font-mono text-base font-bold text-foreground">{event.name}</p>
+                <p className="font-mono text-xs text-muted-foreground mt-0.5 tracking-widest uppercase">
+                  {event.org}
+                </p>
+              </div>
+              <span className="font-mono text-xs border border-tactical/40 px-2 py-1 text-tactical tracking-widest uppercase">
+                Coming soon
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="mt-8 border border-border bg-card p-5">

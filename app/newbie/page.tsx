@@ -25,6 +25,14 @@ const ORGS = [
     available: false,
     tag: "COMING SOON",
   },
+  {
+    slug: "third-coast-airsoft",
+    name: "Third Coast Airsoft",
+    description:
+      "Haven't attended yet. Guide coming once I've got boots-on-ground experience to back it up.",
+    available: false,
+    tag: "COMING SOON",
+  },
 ];
 
 export default function NewbiePage() {
